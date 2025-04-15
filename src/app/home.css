@@ -1,0 +1,117 @@
+.main_home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  position: absolute;
+  top: calc(50% - 119px);
+  left: calc(50% - 119px);
+  color: #fff;
+}
+
+.products {
+  display: flex;
+  height: 55dvh;
+  gap: 50px;
+}
+
+.box__product {
+  width: 25dvw;
+  height: 25dvw;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box__product a {
+  color: #fff;
+  text-decoration: none;
+  font-family: inherit;
+  padding: 8px;
+  background-color: #0008;
+  border-radius: 5px;
+}
+
+.product_gastronomic {
+  background-image: url("/gastronomymock.png");
+}
+
+.product_party {
+  background-image: url("/fiestamock.png");
+}
+
+.product_others {
+  background-image: url("/othersmock.png");
+}
+
+.video__wrapper {
+  width: 100dvw;
+  background-color: color-mix(in srgb-linear, var(--main-color) 75%, #fff 25%);
+}
+
+#videoHome {
+  width: 100dvw;
+  height: 85dvh;
+  margin: 10px;
+  margin-top: 0;
+}
+
+.fringe {
+  background-color: var(--main-color);
+  width: 100dvw;
+  height: 18px;
+}
+
+.about {
+  height: 45dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content_about {
+  position: relative;
+  top: -10%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about h2 {
+  margin: 10px;
+  text-align: center;
+}
+
+.arrow {
+  position: absolute;
+  padding: 6px;
+  background-color: var(--light);
+  bottom: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: inherit;
+  animation: oscillate .6s alternate both infinite;
+}
+
+.textHome {
+  margin: 10px 25dvw;
+  text-align: center;
+}
+
+@keyframes oscillate {
+  from {
+    bottom: 10px;
+  }
+
+  to {
+    bottom: 20px;
+  }
+}

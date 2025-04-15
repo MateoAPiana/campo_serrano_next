@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Metamorphous, Quicksand } from "next/font/google";
 import "./globals.css";
+import { Footer } from "./components/footer";
+import { NavBar } from "./components/navBar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const geistSans = Metamorphous({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
+  weight: ["400"]
 });
 
-const geistMono = Geist_Mono({
+const geistMono = Quicksand({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
@@ -27,7 +30,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="space"></div>
+        <NavBar />
+        <section className="page">
+          {children}
+        </section>
+        <Footer />
       </body>
     </html>
   );

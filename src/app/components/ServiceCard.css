@@ -1,0 +1,26 @@
+.ServiceCard__wrapper {
+  position: relative;
+  color: inherit;
+  border: 1.5px solid #000;
+  border-radius: 10px;
+}
+
+.ServiceCard {
+  display: flex;
+  width: 40dvh;
+  height: 40dvh;
+  background-size: cover;
+  filter: blur(1.5px);
+  border-radius: 10px;
+}
+
+.ServiceCard__wrapper>.title {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  top: calc(50% - 25px);
+  left: calc(50% - 100px);
+  text-transform: capitalize;
+  text-decoration: none;
+}

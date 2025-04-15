@@ -1,0 +1,31 @@
+.navBar {
+  display: flex;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100dvw;
+  background: linear-gradient(90deg, #7fe7bf, #25b67e);
+  height: 15dvh;
+  margin-bottom: 0;
+}
+
+.icon img {
+  height: 80px;
+}
+
+.nav-list {
+  min-width: calc(100% - 125px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-item {
+  list-style: none;
+  padding: 10px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: inherit;
+}

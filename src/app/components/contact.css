@@ -1,0 +1,23 @@
+.contact {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+  align-items: center;
+}
+
+.email,
+.instagram {
+  display: flex;
+}
+
+.email img {
+  width: 25px;
+}
+
+.instagram img {
+  width: 31px;
+}
+
+.info {
+  padding: 5px;
+}

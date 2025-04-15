@@ -13,6 +13,7 @@ const geistSans = Metamorphous({
 const geistMono = Quicksand({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  weight: ["700"]
 });
 
 export const metadata: Metadata = {

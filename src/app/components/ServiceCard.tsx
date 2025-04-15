@@ -4,7 +4,7 @@ import "./ServiceCard.css";
 export function ServiceCard({ title }: { title: string }) {
   return (
 
-    <a href={`/products/service/${title}`} className="ServiceCard__wrapper">
+    <a href={`/products/services/${title}`} className="ServiceCard__wrapper">
       <div
         style={{ backgroundImage: `url("/${title}mock.png");` }}
         className="ServiceCard"

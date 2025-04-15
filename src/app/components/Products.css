@@ -1,0 +1,25 @@
+.productContainer {
+  height: 100%;
+  width: 80dvw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-transform: capitalize;
+  font-size: 28px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  margin: 20px;
+  gap: 10px;
+}
+
+.image {
+  max-height: 50dvh;
+}

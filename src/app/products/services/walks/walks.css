@@ -1,0 +1,24 @@
+.walksPage {
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.walks__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .6s;
+  color: inherit;
+  text-decoration: none;
+}
+
+.walks__item:hover {
+  opacity: .75;
+  transition: opacity .6s;
+}
+
+.walks__item h2 {
+  text-transform: capitalize;
+}

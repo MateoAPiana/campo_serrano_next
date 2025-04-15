@@ -9,10 +9,10 @@ export function DescriptionNav() {
         <ul className="nav__list">
           {
             productsWalks.map((walk, index) => (
-              <li>
+              <li key={index}>
                 <a
                   className="nav__item"
-                  href={`/products/service/walks/descriptions/${walk}`}
+                  href={`/products/services/walks/${walk}`}
                 >
                   {walk}
                 </a>

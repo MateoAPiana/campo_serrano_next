@@ -1,0 +1,12 @@
+.DescriptionClient {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+.DescriptionClient__title {
+  font-size: 2em;
+  text-transform: capitalize;
+}

@@ -1,0 +1,5 @@
+.Description__image {
+  height: 50dvh;
+  width: auto;
+  object-fit: contain;
+}

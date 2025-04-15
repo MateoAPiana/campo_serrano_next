@@ -1,0 +1,39 @@
+.reservation_page {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.reservation_page form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#email_form {
+  padding: 4px;
+  font-family: inherit;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+#calendar {
+  max-width: 70px;
+  box-shadow: 10px 5px 5px #0003;
+}
+
+#submit_form {
+  padding: 8px;
+  font-family: inherit;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+#submit_form:hover {
+  cursor: pointer;
+}

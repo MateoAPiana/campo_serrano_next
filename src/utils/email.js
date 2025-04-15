@@ -1,7 +1,5 @@
-import { BACKEND_HOST } from "astro:env/client"
-
 export function sendEmail(email, text) {
-  fetch(BACKEND_HOST, {
+  fetch("/", {
     body: JSON.stringify({ email: "mateoapiana@gmail.com", text }),
     method: "POST",
     headers: {
@@ -9,7 +7,7 @@ export function sendEmail(email, text) {
     }
   })
 
-  return fetch(BACKEND_HOST, {
+  return fetch("/", {
     body: JSON.stringify({ email, text: "Form created" }),
     method: "POST",
     headers: {

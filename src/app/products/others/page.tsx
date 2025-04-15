@@ -1,6 +1,6 @@
 import Products from "../../components/Products";
 
-export function Others() {
+export default function Others() {
   return (
     <Products product="others" img="/othersmock.png">
       <p>

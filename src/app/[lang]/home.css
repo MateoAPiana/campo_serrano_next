@@ -38,15 +38,15 @@ h1 {
 }
 
 .product_gastronomic {
-  background-image: url("/gastronomymock.png");
+  background-image: url("/assets/gastronomymock.png");
 }
 
 .product_party {
-  background-image: url("/fiestamock.png");
+  background-image: url("/assets/fiestamock.png");
 }
 
 .product_others {
-  background-image: url("/othersmock.png");
+  background-image: url("/assets/othersmock.png");
 }
 
 .video__wrapper {

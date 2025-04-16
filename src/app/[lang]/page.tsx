@@ -2,10 +2,9 @@ import "./home.css";
 
 export default function Home() {
   return (
-
     <main className="main_home">
       <div className="video__wrapper">
-        <video id="videoHome" loop src="/videomock.mp4"></video>
+        <video id="videoHome" loop src="/assets/videomock.mp4"></video>
       </div>
       <a href="#about" className="arrow">
         <svg

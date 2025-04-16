@@ -6,7 +6,7 @@ export function ServiceCard({ title }: { title: string }) {
 
     <a href={`/products/services/${title}`} className="ServiceCard__wrapper">
       <div
-        style={{ backgroundImage: `url("/${title}mock.png");` }}
+        style={{ backgroundImage: `url("/assets/${title}mock.png");` }}
         className="ServiceCard"
       >
       </div>

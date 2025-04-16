@@ -11,7 +11,7 @@ export default function Walks() {
             <a
               key={index}
               href={`/products/services/walks/${p}`}
-              style={{ "backgroundImage": `url('/service/${p}.png')` }}
+              style={{ "backgroundImage": `url('/assets/service/${p}.png')` }}
               className="walks__item"
             >
               <h2>{p}</h2>

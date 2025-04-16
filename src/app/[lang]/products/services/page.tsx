@@ -1,5 +1,5 @@
 import "./styles.css"
-import { ServiceCard } from "../../components/ServiceCard";
+import { ServiceCard } from "app/app/components/ServiceCard";
 
 export default function Services() {
   return (

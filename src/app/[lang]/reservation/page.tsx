@@ -2,7 +2,7 @@
 
 import "./styles.css"
 
-import { sendEmail } from "../../utils/email.js";
+import { sendEmail } from "../../../utils/email.js";
 
 import "vanilla-calendar-pro/styles/index.css";
 import { Calendar, type Options } from "vanilla-calendar-pro";

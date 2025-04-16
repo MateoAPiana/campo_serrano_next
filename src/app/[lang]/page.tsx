@@ -1,6 +1,15 @@
+import { getTranslations } from "../translations/translate";
 import "./home.css";
 
-export default function Home() {
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ lang: string }>
+}) {
+  const { lang } = await params
+
+  const { t } = await getTranslations(lang)
+
   return (
     <main className="main_home">
       <div className="video__wrapper">
@@ -24,26 +33,22 @@ export default function Home() {
       <section className="about" id="about">
         <div className="fringe"></div>
         <div className="content_about">
-          <h2>About us</h2>
+          <h2>{t("about")}</h2>
           <p className="textHome">
-            Welcome to Punto Serrano. <br />
-            Discover the perfect blend of breathtaking sights and exquisite flavors.
-            Join us on a unique journey where stunning landscapes meet culinary delights.
-            Our guided tour offers an unforgettable experience, complete with delicious
-            local dishes and warm hospitality. Book your adventure today and treat your
-            senses to something truly special!
+            {t("welcome") || "error"} <br />
+            {t("welcome_message") || "error"}
           </p>
         </div>
       </section>
       <section className="products">
         <div className="box__product product_gastronomic">
-          <a href="/products/services">Walks and gastronomy</a>
+          <a href="/products/services">{t("services")[0]}</a>
         </div>
         <div className="box__product product_party">
-          <a href="/products/party">Party rental</a>
+          <a href="/products/party">{t("services")[1]}</a>
         </div>
         <div className="box__product product_others">
-          <a href="/products/others">Our products</a>
+          <a href="/products/others">{t("services")[2]}</a>
         </div>
       </section>
     </main>

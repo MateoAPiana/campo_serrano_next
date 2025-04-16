@@ -6,7 +6,6 @@ const dictionaries: Record<string, () => Promise<{} | Record<string, string>>> =
 }
 
 export async function getTranslations(locale: string) {
-  console.log({ locale })
   const dictionary = await dictionaries[locale]()
 
   const t = (key: string, defaultValue = ""): string => {

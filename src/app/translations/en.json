@@ -6,5 +6,13 @@
     "Party rental",
     "Others products"
   ],
-  "about": "About us"
+  "about": "About us",
+  "navBar": [
+    "Home",
+    "Gastronomy",
+    "Events",
+    "Others products",
+    "Reservation",
+    "Contact"
+  ]
 }

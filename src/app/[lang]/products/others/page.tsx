@@ -1,8 +1,8 @@
-import Products from "../../components/Products";
+import Products from "app/app/components/Products"
 
 export default function Others() {
   return (
-    <Products product="others" img="/othersmock.png">
+    <Products product="others" img="/assets/othersmock.png">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima atque
         ratione inventore repellat eos tempora cumque repellendus, beatae libero

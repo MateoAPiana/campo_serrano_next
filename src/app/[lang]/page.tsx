@@ -42,13 +42,13 @@ export default async function Home({
       </section>
       <section className="products">
         <div className="box__product product_gastronomic">
-          <a href="/products/services">{t("services")[0]}</a>
+          <a href="/products/services">{t("services", "0")}</a>
         </div>
         <div className="box__product product_party">
-          <a href="/products/party">{t("services")[1]}</a>
+          <a href="/products/party">{t("services", "1")}</a>
         </div>
         <div className="box__product product_others">
-          <a href="/products/others">{t("services")[2]}</a>
+          <a href="/products/others">{t("services", "2")}</a>
         </div>
       </section>
     </main>

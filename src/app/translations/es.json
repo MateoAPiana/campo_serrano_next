@@ -11,11 +11,20 @@
     "Inicio",
     "Gastronomía",
     "Eventos",
+    "Otros productos",
     "Reservar",
     "Contáctenos"
   ],
   "gastronomy_services": [
     "Caminatas",
     "Gastronomía"
-  ]
+  ],
+  "walks_services": {
+    "crops": "cultivos",
+    "rabbits": "conejos",
+    "vine": "viñas",
+    "circumference": "circunferencia",
+    "birds": "aves",
+    "sheep": "ovejas"
+  }
 }

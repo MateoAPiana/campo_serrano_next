@@ -18,5 +18,13 @@
   "gastronomy_services": [
     "Walks",
     "Gastronomy"
-  ]
+  ],
+  "walks_services": {
+    "crops": "crops",
+    "rabbits": "rabbits",
+    "vine": "vine",
+    "circumference": "circumference",
+    "birds": "birds",
+    "sheep": "sheep"
+  }
 }

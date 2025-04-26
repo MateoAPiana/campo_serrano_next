@@ -8,11 +8,14 @@ const dictionaries: Record<string, () => Promise<{} | Record<string, string>>> =
 export async function getTranslations(locale: string) {
   const dictionary = await dictionaries[locale]()
 
-  const t = (key: string, defaultValue = ""): string => {
+  const t = (key: string, paramKey = ""): string => {
     if (typeof dictionary === "object" && dictionary !== null && key in dictionary) {
-      return (dictionary as Record<string, string>)[key] || defaultValue;
+      if (typeof (dictionary as Record<string, string>)[key] === "object") {
+        return ((dictionary as Record<string, string>)[key])[paramKey as unknown as number];
+      }
+      return (dictionary as Record<string, string>)[key] || paramKey;
     }
-    return defaultValue;
+    return paramKey;
   }
 
   const numberFormatter = new Intl.NumberFormat(locale).format

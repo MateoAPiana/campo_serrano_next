@@ -11,8 +11,8 @@ export default async function Services({
   const { t } = await getTranslations(lang)
   return (
     <main>
-      <ServiceCard title={t("gastronomy_services")[0]} service="walks" />
-      <ServiceCard title={t("gastronomy_services")[1]} service="gastronomy" />
+      <ServiceCard title={t("gastronomy_services", "0")} service="walks" />
+      <ServiceCard title={t("gastronomy_services", "1")} service="gastronomy" />
     </main>
   )
 }

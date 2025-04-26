@@ -14,5 +14,9 @@
     "Others products",
     "Reservation",
     "Contact"
+  ],
+  "gastronomy_services": [
+    "Walks",
+    "Gastronomy"
   ]
 }

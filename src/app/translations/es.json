@@ -13,5 +13,9 @@
     "Eventos",
     "Reservar",
     "Contáctenos"
+  ],
+  "gastronomy_services": [
+    "Caminatas",
+    "Gastronomía"
   ]
 }

@@ -1,11 +1,11 @@
 import { productsWalks } from "app/services/productsWalks";
 import "./DescriptionNav.css";
 
-export function DescriptionNav() {
+export function DescriptionNav({ t }: { t: (key: string, paramKey?: string) => string }) {
   return (
     <>
       <nav className="nav">
-        <h2 className="nav__title">Walks</h2>
+        <h2 className="nav__title">{t("gastronomy_services", "0")}</h2>
         <ul className="nav__list">
           {
             productsWalks.map((walk, index) => (
@@ -14,7 +14,7 @@ export function DescriptionNav() {
                   className="nav__item"
                   href={`/products/services/walks/${walk}`}
                 >
-                  {walk}
+                  {t("walks_services", walk)}
                 </a>
               </li>
             ))

@@ -1,8 +1,11 @@
 import Products from "app/app/components/Products"
+import { getTranslations } from "app/app/translations/translate"
 
-export default function Others() {
+export default async function Others({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params
+  const { t } = await getTranslations(lang)
   return (
-    <Products product="others" img="/assets/othersmock.png">
+    <Products product="Others products" img="/assets/othersmock.png" t={t} >
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima atque
         ratione inventore repellat eos tempora cumque repellendus, beatae libero

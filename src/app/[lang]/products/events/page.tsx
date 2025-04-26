@@ -1,8 +1,11 @@
 import Products from "app/app/components/Products";
+import { getTranslations } from "app/app/translations/translate";
 
-export default function PartyPage() {
+export default async function PartyPage({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params
+  const { t } = await getTranslations(lang)
   return (
-    <Products product="party" img="/fiestamock.png">
+    <Products product="Events" img="/assets/fiestamock.png" t={t}>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima atque
         ratione inventore repellat eos tempora cumque repellendus, beatae libero

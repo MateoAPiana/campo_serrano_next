@@ -7,14 +7,14 @@
     "Otros productos"
   ],
   "about": "Acerca de nosotros",
-  "navBar": [
-    "Inicio",
-    "Gastronomía",
-    "Eventos",
-    "Otros productos",
-    "Reservar",
-    "Contáctenos"
-  ],
+  "navBar": {
+    "Home": "Inicio",
+    "Gastronomy": "Gastronomía",
+    "Events": "Eventos",
+    "Others products": "Otros productos",
+    "Reservation": "Reservar",
+    "Contact": "Contáctenos"
+  },
   "gastronomy_services": [
     "Caminatas",
     "Gastronomía"

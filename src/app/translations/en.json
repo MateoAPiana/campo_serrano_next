@@ -7,14 +7,14 @@
     "Others products"
   ],
   "about": "About us",
-  "navBar": [
-    "Home",
-    "Gastronomy",
-    "Events",
-    "Others products",
-    "Reservation",
-    "Contact"
-  ],
+  "navBar": {
+    "Home": "Home",
+    "Gastronomy": "Gastronomy",
+    "Events": "Events",
+    "Others products": "Others products",
+    "Reservation": "Reservation",
+    "Contact": "Contact"
+  },
   "gastronomy_services": [
     "Walks",
     "Gastronomy"

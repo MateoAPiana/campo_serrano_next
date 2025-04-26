@@ -23,12 +23,12 @@ export function NavBar() {
     <nav className="navBar">
       <img src="/assets/icon.png" alt="" />
       <ul className="nav-list">
-        <li className="nav-item"><a href={`/${lang}/`}>{t && t("navBar", 0)}</a></li>
-        <li className="nav-item"><a href={`/${lang}/products/services`}>{t && t("navBar", 1)}</a></li>
-        <li className="nav-item"><a href={`/${lang}/products/party`}>{t && t("navBar", 2)}</a></li>
-        <li className="nav-item"><a href={`/${lang}/products/others`}>{t && t("navBar", 3)}</a></li>
-        <li className="nav-item"><a href={`/${lang}/reservation`}>{t && t("navBar", 4)}</a></li>
-        <li className="nav-item"><a href={`/${lang}/#contact`}>{t && t("navBar", 5)}</a></li>
+        <li className="nav-item"><a href={`/${lang}/`}>{t && t("navBar", "Home")}</a></li>
+        <li className="nav-item"><a href={`/${lang}/products/services`}>{t && t("navBar", "Gastronomy")}</a></li>
+        <li className="nav-item"><a href={`/${lang}/products/events`}>{t && t("navBar", "Events")}</a></li>
+        <li className="nav-item"><a href={`/${lang}/products/others`}>{t && t("navBar", "Others products")}</a></li>
+        <li className="nav-item"><a href={`/${lang}/reservation`}>{t && t("navBar", "Reservation")}</a></li>
+        <li className="nav-item"><a href={`/${lang}/#contact`}>{t && t("navBar", "Contact")}</a></li>
       </ul>
     </nav>
   )

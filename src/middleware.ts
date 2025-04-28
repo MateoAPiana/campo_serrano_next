@@ -4,7 +4,7 @@ import { getLocale, hasPathnameLocale } from "./utils/i18n";
 export default function Middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
-  if (pathname.includes("assets") || pathname.includes("favicon")) return
+  if (pathname.includes("assets") || pathname.includes("favicon") || pathname.startsWith("/api")) return
 
   const hasLocal = hasPathnameLocale(pathname)
   if (hasLocal) return

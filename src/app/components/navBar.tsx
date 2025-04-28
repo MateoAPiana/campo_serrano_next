@@ -8,8 +8,6 @@ export function NavBar() {
   const pathname = usePathname()
   const lang = pathname.split("/")[1]
 
-  console.log({ pathname })
-
   const [t, setT] = useState<Function>()
 
   useEffect(() => {

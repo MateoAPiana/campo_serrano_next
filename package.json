@@ -15,7 +15,9 @@
     "next": "15.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "vanilla-calendar-pro": "^3.0.4"
+    "resend": "^4.4.1",
+    "vanilla-calendar-pro": "^3.0.4",
+    "zod": "^3.24.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

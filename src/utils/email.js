@@ -1,5 +1,5 @@
 export function sendEmail(email, text) {
-  fetch("/", {
+  fetch("/api", {
     body: JSON.stringify({ email: "mateoapiana@gmail.com", text }),
     method: "POST",
     headers: {
@@ -7,7 +7,7 @@ export function sendEmail(email, text) {
     }
   })
 
-  return fetch("/", {
+  return fetch("/api", {
     body: JSON.stringify({ email, text: "Form created" }),
     method: "POST",
     headers: {

@@ -8,6 +8,8 @@ export function NavBar() {
   const pathname = usePathname()
   const lang = pathname.split("/")[1]
 
+  console.log({ pathname })
+
   const [t, setT] = useState<Function>()
 
   useEffect(() => {
@@ -29,6 +31,7 @@ export function NavBar() {
         <li className="nav-item"><a href={`/${lang}/products/others`}>{t && t("navBar", "Others products")}</a></li>
         <li className="nav-item"><a href={`/${lang}/reservation`}>{t && t("navBar", "Reservation")}</a></li>
         <li className="nav-item"><a href={`/${lang}/#contact`}>{t && t("navBar", "Contact")}</a></li>
+        <li className="nav-item"><a href={`/${lang === "en" ? "es" : "en"}${pathname.slice(3)}`}>{lang === "en" ? "ES" : "EN"}</a></li>
       </ul>
     </nav>
   )

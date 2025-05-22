@@ -6,7 +6,7 @@ const dictionaries: Record<string, () => Promise<{} | Record<string, string>>> =
 }
 
 export async function getTranslations(locale: string) {
-  const dictionary = await dictionaries[locale]()
+  const dictionary = await dictionaries[locale]?.()
 
   const t = (key: string, paramKey = ""): string => {
     if (typeof dictionary === "object" && dictionary !== null && key in dictionary) {
@@ -18,15 +18,10 @@ export async function getTranslations(locale: string) {
     return paramKey;
   }
 
-  const numberFormatter = new Intl.NumberFormat(locale).format
-  const f = (n: number): string => {
-    return numberFormatter(n)
-  }
-
   const dateFormatter = new Intl.DateTimeFormat(locale).format
   const d = (date: Date): string => {
     return dateFormatter(date)
   }
 
-  return { t, f, d }
+  return { t, d }
 }

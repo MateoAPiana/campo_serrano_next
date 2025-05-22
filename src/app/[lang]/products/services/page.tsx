@@ -17,9 +17,9 @@ export default async function Services({
         <ServiceCard title={t("gastronomy_services", "1")} service="gastronomy" />
       </section>
       <section className="content_service">
-        <h1 className="text-2xl">Service of gastronomy and walks</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse animi labore, corporis, asperiores in quod necessitatibus nobis odio ab itaque repudiandae porro dolore atque, sunt aspernatur dolorum exercitationem molestias aliquam.</p>
-        <Link className="content_service__button" href={`/${lang}/reservation`}>Request a reservation</Link>
+        <h1 className="text-2xl">{t && t("service_page", "title")}</h1>
+        <p>{t && t("service_page", "text")}</p>
+        <Link className="content_service__button" href={`/${lang}/reservation`}>{t && t("service_page", "button")}</Link>
       </section>
     </main>
   )

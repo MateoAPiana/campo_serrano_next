@@ -26,5 +26,10 @@
     "circumference": "circumference",
     "birds": "birds",
     "sheep": "sheep"
+  },
+  "service_page": {
+    "title": "Service of gastronomy and walks",
+    "button": "Request a reservation",
+    "text": "We offer a unique experience that combines the beauty of nature with the richness of local gastronomy. Whether you're looking for a relaxing walk or an adventurous hike, we have the perfect option for you. Join us and discover the magic of our region!"
   }
 }

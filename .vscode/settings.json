@@ -1,5 +1,6 @@
 {
   "cSpell.words": [
     "Punto"
-  ]
+  ],
+  "postman.settings.dotenv-detection-notification-visibility": false
 }

@@ -10,23 +10,17 @@ import { MouseEventHandler, useEffect, useState } from "react";
 
 export default function Reservation() {
   const [day, setDay] = useState("")
-  const [time, setTime] = useState("")
 
   const options: Options = {
     onClickDate(self) {
       setDay(self.context.selectedDates as unknown as string)
     },
-    onChangeTime(self) {
-      setTime(self.context.selectedHours + " : " + self.context.selectedMinutes as unknown as string)
-    },
     selectedTheme: "light",
-    selectionTimeMode: 12,
     dateMin: "today",
   };
 
   useEffect(() => {
     const calendar = new Calendar(".calendar", options);
-
     calendar.init();
   }, [])
 
@@ -37,7 +31,7 @@ export default function Reservation() {
     console.log({ target: formData.get("email") });
     (async () => {
       if (!email) throw new Error("The email is required");
-      const res = await sendEmail(email, day[0] + " " + time);
+      const res = await sendEmail(email, day[0]);
       if (res.ok) { }
     })();
   };
@@ -46,11 +40,31 @@ export default function Reservation() {
     <main className="reservation_page">
       <h1>Reservation</h1>
       <form action="post" onSubmit={handleSubmit}>
-        <label>Your email:
-          <input type="email" name="email" id="email_form" required />
-        </label>
-        <div className="calendar"></div>
-        <input type="submit" name="submit_form" id="submit_form" value="Submit" />
+        <div className="calendar__wrapper">
+          <div className="calendar"></div>
+          <input type="submit" name="submit_form" id="submit_form" value="Submit" />
+        </div>
+        <div className="reservation__form">
+          <label>Your email: <br />
+            <input type="email" name="email" id="email_form" placeholder="example@gmail.com" required />
+          </label>
+          <label>
+            Quantity of people: <br />
+            <input type="number" name="quantity" id="quantity_form" min={1} max={15} defaultValue={2} required />
+          </label>
+          <label>
+            Your menu: <br />
+            <select name="menu" id="menu_form">
+              <option value="1">Rabbit</option>
+              <option value="2">Sheep</option>
+              <option value="3">Empanada</option>
+            </select>
+          </label>
+          <label>
+            <input type="checkbox" name="paniza" id="paniza_form" />
+            Are you stay in Paniza?
+          </label>
+        </div>
       </form>
     </main>
   )

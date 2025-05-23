@@ -1,6 +1,5 @@
 .reservation_page {
   width: 100%;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,16 +8,40 @@
 }
 
 .reservation_page form {
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  justify-content: center;
+  gap: 5%;
 }
 
-#email_form {
+.calendar__wrapper {
+  width: 80%;
+  height: 100%;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.reservation__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reservation_page h1 {
+  font-size: 1.5rem;
+}
+
+.reservation__form input,
+.reservation__form select {
   padding: 4px;
   font-family: inherit;
   border: 1px solid #000;
   border-radius: 8px;
+  background-color: #fff;
 }
 
 #calendar {
@@ -27,6 +50,7 @@
 }
 
 #submit_form {
+  width: 100%;
   padding: 8px;
   font-family: inherit;
   background-color: #fff;
@@ -36,4 +60,18 @@
 
 #submit_form:hover {
   cursor: pointer;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+[data-vc-theme=light] .vc-week__day[data-vc-week-day-off] {
+  color: var(--dark-color) !important;
+}
+
+[data-vc-theme=light] .vc-date[data-vc-date-holiday] .vc-date__btn,
+[data-vc-theme=light] .vc-date[data-vc-date-weekend] .vc-date__btn {
+  color: #B31312 !important;
+  font-weight: 400;
 }

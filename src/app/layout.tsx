@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Metamorphous, Quicksand } from "next/font/google";
+import { Montserrat, Quicksand } from "next/font/google";
 import "./globals.css";
 import { Footer } from "./components/footer";
 import { NavBar } from "./components/navBar";
 
-const geistSans = Metamorphous({
+const geistSans = Montserrat({
   variable: "--font-geist-mono",
   subsets: ["latin"],
   weight: ["400"]

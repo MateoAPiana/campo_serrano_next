@@ -4,7 +4,8 @@
   top: 0;
   z-index: 10;
   width: 100dvw;
-  background: linear-gradient(90deg, #7fe7bf, #25b67e);
+  /* background: linear-gradient(90deg, #7fe7bf, #25b67e); */
+  background: var(--main-color);
   height: 15dvh;
   margin-bottom: 0;
 }

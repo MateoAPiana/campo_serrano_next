@@ -1,11 +1,27 @@
 @import "tailwindcss";
 
 :root {
+  --dark-color: #F3EEEA;
+  --main-color: #EBE3D5;
+  --second-color: #B0A695;
+  --light: #F3EEEA;
+}
+
+/* 
+:root {
+  --dark-color: #A59D84;
+  --light: #ECEBDE;
+  --main-color: #C1BAA1;
+  --second-color: #D7D3BF;
+} */
+
+/* 
+:root {
   --dark-color: #118b50;
   --light: #fbf6e9;
   --main-color: #5db996;
   --second-color: #e3f0af;
-}
+} */
 
 html {
   overflow-x: hidden;
@@ -15,7 +31,7 @@ body {
   min-height: 100dvh;
   max-width: 100dvw;
   background-color: var(--light);
-  font-family: Metamorphous;
+  font-family: Montserrat;
   display: flex;
   flex-direction: column;
 }
@@ -28,10 +44,6 @@ body {
 .page {
   flex: 1;
   display: flex;
-}
-
-h1 {
-  font-family: Martel;
 }
 
 h2 {

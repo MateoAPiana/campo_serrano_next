@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function Description({ title, src, alt, t }: { title: string, src: string, alt: string, t: (key: string, paramKey?: string) => string }) {
   return (
-    <>
+    <section className="Description__wrapper">
       <main className="DescriptionClient">
         <h1 className="DescriptionClient__title">{t("walks_services", title)}</h1>
         <Image
@@ -16,6 +16,6 @@ export function Description({ title, src, alt, t }: { title: string, src: string
         />
       </main>
       <DescriptionNav t={t} />
-    </>
+    </section>
   )
 }

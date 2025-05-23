@@ -8,12 +8,14 @@
 }
 
 .nav {
+  box-sizing: content-box;
+  height: 80%;
   display: flex;
-  margin: 0;
   flex-direction: column;
   padding: 20px;
   background-color: var(--second-color);
-  box-shadow: -8px 0 8px rgba(0, 0, 0, 0.1);
+  border: solid 1px var(--dark-color);
+  border-radius: 10px 0 0 10px;
 }
 
 .nav__title {
@@ -31,7 +33,7 @@
   padding: 10px;
   margin: 5px 0;
   background-color: var(--dark-color);
-  color: var(--second-color);
+  /* color: var(--light); */
   border: 1px solid var(--dark-color);
   border-radius: 5px;
   text-decoration: none;

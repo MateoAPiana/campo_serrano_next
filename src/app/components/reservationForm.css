@@ -86,6 +86,7 @@ input[type="checkbox"] {
   padding: 20px;
   gap: 20px;
   align-items: center;
+  justify-content: center;
 }
 
 .reservation_form2__content img {
@@ -99,4 +100,8 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.walks_services__wrapper label {
+  text-transform: capitalize;
 }

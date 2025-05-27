@@ -31,5 +31,15 @@
     "title": "Service of gastronomy and walks",
     "button": "Request a reservation",
     "text": "We offer a unique experience that combines the beauty of nature with the richness of local gastronomy. Whether you're looking for a relaxing walk or an adventurous hike, we have the perfect option for you. Join us and discover the magic of our region!"
+  },
+  "reservation": {
+    "email": "Your email:",
+    "people": "Quantity of people:",
+    "menu": "Your menu:",
+    "menu1": "Rabbit",
+    "menu2": "Sheep",
+    "menu3": "Empanada",
+    "paniza": "Are you stay in Paniza?",
+    "chooseWalks": "Select the walks to do:"
   }
 }

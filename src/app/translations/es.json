@@ -31,5 +31,15 @@
     "title": "Servicios de gastronomía y paseos",
     "button": "Solicitar una reserva",
     "text": "Le ofrecemos una experiencia única que combina la belleza de la naturaleza con la riqueza de la gastronomía local. Tanto si busca un paseo relajante como una excursión de aventura, tenemos la opción perfecta para usted. ¡Únase a nosotros y descubra la magia de nuestra región!"
+  },
+  "reservation": {
+    "email": "Su email:",
+    "people": "Cantidad de personas:",
+    "menu": "Su menú:",
+    "menu1": "Conejo",
+    "menu2": "Cordero",
+    "menu3": "Empanada",
+    "paniza": "Se está hospedando en Paniza?",
+    "chooseWalks": "Seleccione los paseos que desea realizar:"
   }
 }

@@ -36,7 +36,7 @@ export default function Reservation({
 
   return (
     <main className="reservation_page">
-      <h1>Reservation</h1>
+      <h1>{t && t?.("navBar", "Reservation")}</h1>
       <ReservationForm t={t} walks_services={walks_services} />
     </main>
   )

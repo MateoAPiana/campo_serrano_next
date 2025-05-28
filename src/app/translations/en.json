@@ -40,6 +40,7 @@
     "menu2": "Sheep",
     "menu3": "Empanada",
     "paniza": "Are you stay in Paniza?",
-    "chooseWalks": "Select the walks to do:"
+    "chooseWalks": "Select the walks to do:",
+    "errorDate": "Please select a date."
   }
 }

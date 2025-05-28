@@ -40,6 +40,7 @@
     "menu2": "Cordero",
     "menu3": "Empanada",
     "paniza": "Se está hospedando en Paniza?",
-    "chooseWalks": "Seleccione los paseos que desea realizar:"
+    "chooseWalks": "Seleccione los paseos que desea realizar:",
+    "errorDate": "Por favor, seleccione una fecha."
   }
 }

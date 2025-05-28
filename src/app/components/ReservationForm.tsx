@@ -9,6 +9,7 @@ import { Calendar, Options } from "vanilla-calendar-pro";
 export function ReservationForm({ walks_services, t }: { walks_services: string[], t: ((key: string, paramKey?: string) => string) | undefined }) {
   const [day, setDay] = useState("")
   const [page, setPage] = useState<0 | 1>(0)
+  const [error, setError] = useState("")
   const options: Options = {
     onClickDate(self) {
       setDay(self.context.selectedDates as unknown as string)
@@ -24,6 +25,11 @@ export function ReservationForm({ walks_services, t }: { walks_services: string[
 
   const handleContinue: MouseEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
+    setError("")
+    if (!day) {
+      setError(t?.("reservation", "errorDate") || "Error");
+      return;
+    }
     setPage(1);
   }
 
@@ -64,6 +70,7 @@ export function ReservationForm({ walks_services, t }: { walks_services: string[
             <input type="checkbox" name="paniza" id="paniza_form" />
             {t && t("reservation", "paniza")}
           </label>
+          {error && <p className="text-red-700">Error: {error}</p>}
           <input type="submit" name="submit_form" id="submit_form" value="Continue" />
         </div>
       </form>

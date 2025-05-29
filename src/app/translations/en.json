@@ -42,5 +42,13 @@
     "paniza": "Are you stay in Paniza?",
     "chooseWalks": "Select the walks to do:",
     "errorDate": "Please select a date."
+  },
+  "productsReservation": {
+    "title": "Consult price to our products",
+    "address": "Your address:",
+    "addressPlaceholder": "Enter your address",
+    "email": "Your email:",
+    "emailPlaceholder": "Enter your email",
+    "submit": "Send"
   }
 }

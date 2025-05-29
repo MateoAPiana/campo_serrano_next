@@ -42,5 +42,13 @@
     "paniza": "Se está hospedando en Paniza?",
     "chooseWalks": "Seleccione los paseos que desea realizar:",
     "errorDate": "Por favor, seleccione una fecha."
+  },
+  "productsReservation": {
+    "title": "Consultar el precio de nuestros productos",
+    "address": "Su domicilio:",
+    "addressPlaceholder": "Ingrese su dirección",
+    "email": "Su email:",
+    "emailPlaceholder": "Ingrese su email",
+    "submit": "Enviar"
   }
 }

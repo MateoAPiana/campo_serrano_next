@@ -24,9 +24,9 @@ export function NavBar() {
       <img src="/assets/icon.png" alt="" />
       <ul className="nav-list">
         <li className="nav-item"><a href={`/${lang}/`}>{t && t("navBar", "Home")}</a></li>
-        <li className="nav-item"><a href={`/${lang}/products/services`}>{t && t("navBar", "Gastronomy")}</a></li>
-        <li className="nav-item"><a href={`/${lang}/products/events`}>{t && t("navBar", "Events")}</a></li>
-        <li className="nav-item"><a href={`/${lang}/products/others`}>{t && t("navBar", "Others products")}</a></li>
+        <li className="nav-item desktop"><a href={`/${lang}/products/services`}>{t && t("navBar", "Gastronomy")}</a></li>
+        <li className="nav-item desktop"><a href={`/${lang}/products/events`}>{t && t("navBar", "Events")}</a></li>
+        <li className="nav-item desktop"><a href={`/${lang}/products/others`}>{t && t("navBar", "Others products")}</a></li>
         <li className="nav-item"><a href={`/${lang}/reservation`}>{t && t("navBar", "Reservation")}</a></li>
         <li className="nav-item"><a href={`/${lang}/#contact`}>{t && t("navBar", "Contact")}</a></li>
         <li className="nav-item"><a href={`/${lang === "en" ? "es" : "en"}${pathname.slice(3)}`}>{lang === "en" ? "ES" : "EN"}</a></li>

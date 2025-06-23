@@ -115,3 +115,14 @@ h1 {
     bottom: 20px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .video__wrapper {
+    height: min-content;
+  }
+
+  #videoHome {
+    height: min-content;
+    margin: 0;
+  }
+}

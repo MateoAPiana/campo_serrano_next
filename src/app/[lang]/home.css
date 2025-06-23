@@ -125,4 +125,17 @@ h1 {
     height: min-content;
     margin: 0;
   }
+
+  .arrow {
+    display: none;
+  }
+
+  .content_about {
+    top: 0;
+    padding: 0;
+  }
+
+  .textHome {
+    margin: 10px 5vw;
+  }
 }

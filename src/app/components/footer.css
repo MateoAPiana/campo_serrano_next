@@ -2,8 +2,8 @@ footer {
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   min-width: 100dvw;
-  height: 10dvh;
+  min-height: 10dvh;
   background-color: var(--second-color);
 }

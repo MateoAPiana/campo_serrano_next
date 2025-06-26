@@ -2,7 +2,6 @@ import "./walks.css";
 import { productsWalks } from "./productsWalks";
 import { getTranslations } from "app/app/translations/translate";
 
-
 export default async function Walks({
   params,
 }: {

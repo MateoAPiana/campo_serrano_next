@@ -43,3 +43,65 @@
   color: var(--text-color);
   background-color: #0001;
 }
+
+#navDescriptions {
+  display: none;
+}
+
+#iconDescriptions {
+  display: none;
+  width: 25px;
+  height: 25px;
+  background-image: url("/assets/close.svg");
+  background-size: cover;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#iconDescriptionsOpen {
+  display: none;
+  width: 25px;
+  height: 25px;
+  background-color: var(--second-color);
+  background-image: url("/assets/open.svg");
+  background-size: cover;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
+
+#iconDescriptionsOpen::after {
+  content: "";
+  display: none;
+  width: 40px;
+  height: 50px;
+  background-color: var(--second-color);
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  z-index: -1;
+  box-shadow: -2px 0 2px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+
+  .nav {
+    position: absolute;
+    right: 0;
+    height: 99%;
+  }
+
+  #iconDescriptions {
+    display: block;
+  }
+
+  .nav:has(#navDescriptions:checked) {
+    display: none;
+  }
+
+  .page:has(#navDescriptions:checked) #iconDescriptionsOpen,
+  .page:has(#navDescriptions:checked) #iconDescriptionsOpen::after {
+    display: block;
+  }
+}

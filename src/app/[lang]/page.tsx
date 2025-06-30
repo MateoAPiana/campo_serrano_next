@@ -45,7 +45,7 @@ export default async function Home({
           <a href="/products/services">{t("services", "0")}</a>
         </div>
         <div className="box__product product_party">
-          <a href="/products/party">{t("services", "1")}</a>
+          <a href="/products/events">{t("services", "1")}</a>
         </div>
         <div className="box__product product_others">
           <a href="/products/others">{t("services", "2")}</a>

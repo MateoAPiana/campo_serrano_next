@@ -50,6 +50,7 @@ h1 {
 }
 
 .video__wrapper {
+  position: relative;
   width: 100dvw;
   background-color: color-mix(in srgb-linear, var(--main-color) 75%, #fff 25%);
 }
@@ -92,7 +93,8 @@ h1 {
   position: absolute;
   padding: 6px;
   background-color: var(--light);
-  bottom: 10px;
+  bottom: 1dvh;
+  left: calc(50% - 17.5px);
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -108,11 +110,11 @@ h1 {
 
 @keyframes oscillate {
   from {
-    bottom: 10px;
+    bottom: 5dvh;
   }
 
   to {
-    bottom: 20px;
+    bottom: 4dvh;
   }
 }
 

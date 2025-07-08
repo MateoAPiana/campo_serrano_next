@@ -10,10 +10,6 @@
   margin-bottom: 0;
 }
 
-.icon img {
-  height: 80px;
-}
-
 .nav-list {
   min-width: calc(100% - 125px);
   display: flex;
@@ -29,4 +25,18 @@
 .nav-item a {
   text-decoration: none;
   color: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  .navBar {
+    justify-content: space-around;
+  }
+
+  .navBar img {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
 }

@@ -20,7 +20,10 @@ export function DescriptionNav({ t }: { t: (key: string, paramKey?: string) => s
             ))
           }
         </ul>
+        <input type="checkbox" name="nav" id="navDescriptions" />
+        <label htmlFor="navDescriptions" id="iconDescriptions"></label>
       </nav>
+      <label htmlFor="navDescriptions" id="iconDescriptionsOpen"></label>
     </>
   )
 }

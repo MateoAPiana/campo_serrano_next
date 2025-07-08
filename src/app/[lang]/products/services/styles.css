@@ -32,3 +32,14 @@ main {
 .content_service__button:hover {
   opacity: 0.8;
 }
+
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .content_service {
+    margin-top: 5%;
+    max-width: 80%;
+  }
+}

@@ -23,3 +23,13 @@
 .image {
   max-height: 50dvh;
 }
+
+@media (max-width: 600px) {
+  .productContainer {
+    margin-top: 5dvh;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+}

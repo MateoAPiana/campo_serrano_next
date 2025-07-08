@@ -22,3 +22,13 @@
 .walks__item h2 {
   text-transform: capitalize;
 }
+
+@media screen and (max-width: 600px) {
+  .walksPage {
+    grid-template-columns: 1fr;
+  }
+
+  .walks__item {
+    background-position: center;
+  }
+}

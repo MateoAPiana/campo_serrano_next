@@ -33,3 +33,15 @@
   text-transform: capitalize;
   text-decoration: none;
 }
+
+@media screen and (max-width: 600px) {
+  .ServiceCards__wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8dvh;
+  }
+
+  .ServiceCard {
+    height: 20dvh;
+  }
+}

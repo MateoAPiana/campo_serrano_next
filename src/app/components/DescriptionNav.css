@@ -87,21 +87,27 @@
 @media (max-width: 600px) {
 
   .nav {
+    display: none;
     position: absolute;
     right: 0;
     height: 99%;
   }
 
-  #iconDescriptions {
+  #iconDescriptionsOpen,
+  #iconDescriptionsOpen::after {
     display: block;
   }
 
-  .nav:has(#navDescriptions:checked) {
+  #iconDescriptions {
     display: none;
   }
 
-  .page:has(#navDescriptions:checked) #iconDescriptionsOpen,
-  .page:has(#navDescriptions:checked) #iconDescriptionsOpen::after {
+  .nav:has(#navDescriptions:checked),
+  .page:has(#navDescriptions:checked) #iconDescriptions {
     display: block;
+  }
+
+  .page:has(#navDescriptions:checked) #iconDescriptionsOpen {
+    display: none;
   }
 }

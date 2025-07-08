@@ -2,8 +2,15 @@ footer {
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   min-width: 100dvw;
   min-height: 10dvh;
   background-color: var(--second-color);
+}
+
+@media screen and (max-width: 650px) {
+  footer {
+    justify-content: center;
+  }
+
 }

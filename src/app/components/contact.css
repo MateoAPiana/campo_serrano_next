@@ -8,18 +8,22 @@
 .email,
 .instagram {
   display: flex;
+  align-items: center;
 }
 
 .email img {
-  width: 25px;
+  width: 24px;
+  height: 24px;
 }
 
 .instagram img {
-  width: 31px;
+  width: 24px;
+  height: 24px;
 }
 
 .info {
   padding: 5px;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 600px) {

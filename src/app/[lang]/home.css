@@ -170,20 +170,21 @@ h1 {
     height: 65%;
     width: 25%;
     background-size: cover;
+    background-position: center;
     position: absolute;
     right: 5dvw;
   }
 
   .product_gastronomic::after {
-    background-image: url("/assets/gastronomymock.png");
+    background-image: url("/assets/gastronomy-mini.jpg");
   }
 
   .product_party::after {
-    background-image: url("/assets/fiestamock.png");
+    background-image: url("/assets/events.jpg");
   }
 
   .product_others::after {
-    background-image: url("/assets/othersmock.png");
+    background-image: url("/assets/ourProducts.jpg");
   }
 
   body {

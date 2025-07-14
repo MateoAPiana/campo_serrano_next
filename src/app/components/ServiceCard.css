@@ -12,6 +12,7 @@
   width: 30dvh;
   height: 30dvh;
   background-size: cover;
+  background-position: center;
   filter: blur(1px);
   border-radius: 10px;
   box-shadow: 6px 9px 0px color-mix(in srgb, var(--second-color) 80%, #000 20%);

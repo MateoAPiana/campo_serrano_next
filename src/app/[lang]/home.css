@@ -22,6 +22,7 @@ h1 {
   width: 25dvw;
   height: 25dvw;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,15 +39,15 @@ h1 {
 }
 
 .product_gastronomic {
-  background-image: url("/assets/gastronomymock.png");
+  background-image: url("/assets/gastronomy.jpg");
 }
 
 .product_party {
-  background-image: url("/assets/fiestamock.png");
+  background-image: url("/assets/events.jpg");
 }
 
 .product_others {
-  background-image: url("/assets/othersmock.png");
+  background-image: url("/assets/ourProducts.jpg");
 }
 
 .video__wrapper {

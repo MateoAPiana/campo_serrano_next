@@ -17,7 +17,7 @@ export default async function Walks({
             <a
               key={index}
               href={`/products/services/walks/${p}`}
-              style={{ "backgroundImage": `url('/assets/service/${p}.png')` }}
+              style={{ "backgroundImage": `url('/assets/service/${p}.jpg')` }}
               className="walks__item"
             >
               <h2>{t("walks_services", p)}</h2>

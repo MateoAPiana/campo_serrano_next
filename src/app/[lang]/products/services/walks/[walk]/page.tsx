@@ -6,6 +6,6 @@ export default async function WalksPage({ params }: { params: Promise<{ walk: st
   const { walk, lang } = await params;
   const { t } = await getTranslations(lang)
   return (
-    <Description title={walk} src={`/assets/service/${walk}.png`} alt={`Image of ${walk}`} t={t} />
+    <Description title={walk} src={`/assets/service/${walk}.jpg`} alt={`Image of ${walk}`} t={t} />
   )
 }

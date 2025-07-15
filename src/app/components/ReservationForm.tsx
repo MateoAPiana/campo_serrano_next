@@ -77,7 +77,7 @@ export function ReservationForm({ walks_services, t }: { walks_services: string[
       <form className="reservation_form2" onSubmit={handleSubmit} action="post" style={{ display: !page ? "none" : "flex" }} >
         <h2>{t && t("reservation", "chooseWalks")}</h2>
         <section className="reservation_form2__content">
-          <img src={"/assets/walksmock.png"} alt="" />
+          <img src={"/assets/walks.jpg"} alt="" />
           <div className="walks_services__wrapper">
             {
               walks_services.map(key => {

@@ -18,10 +18,5 @@ export async function getTranslations(locale: string) {
     return paramKey;
   }
 
-  const dateFormatter = new Intl.DateTimeFormat(locale).format
-  const d = (date: Date): string => {
-    return dateFormatter(date)
-  }
-
-  return { t, d }
+  return { t }
 }

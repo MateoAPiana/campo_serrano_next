@@ -10,6 +10,10 @@ export function ReservationForm({ walks_services, t }: { walks_services: string[
   const [day, setDay] = useState("")
   const [page, setPage] = useState<0 | 1>(0)
   const [error, setError] = useState("")
+  const [email, setEmail] = useState("")
+  const [guestCount, setGuestCount] = useState("")
+  const [menu, setMenu] = useState("second")
+
   const options: Options = {
     onClickDate(self) {
       setDay(self.context.selectedDates as unknown as string)
@@ -25,6 +29,13 @@ export function ReservationForm({ walks_services, t }: { walks_services: string[
 
   const handleContinue: MouseEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
+    const formData = new FormData(event.currentTarget)
+    const emailValue = formData.get("email")
+    const guessValue = formData.get("quantity")
+    const menuValue = formData.get("menu")
+    setGuestCount(guessValue as string)
+    setEmail(emailValue as string)
+    setMenu(menuValue as string)
     setError("")
     if (!day) {
       setError(t?.("reservation", "errorDate") || "Error");
@@ -36,13 +47,22 @@ export function ReservationForm({ walks_services, t }: { walks_services: string[
   const handleSubmit: MouseEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget)
-    const email = formData.get("email")
-    console.log({ target: formData.get("email") });
-    (async () => {
-      if (!email) throw new Error("The email is required");
-      const res = await sendEmail(email, day[0]);
-      if (res.ok) { }
-    })();
+    let walksSelected: string[] = [];
+    walks_services.forEach(w => {
+      if (formData.get(w)) {
+        walksSelected.push(w);
+      }
+    })
+      ; (async () => {
+        if (!email) throw new Error("The email is required");
+        const res = await sendEmail(email, {
+          reservationDate: day[0],
+          guestCount: parseInt(guestCount),
+          menu,
+          walksSelected
+        });
+        if (res.ok) { }
+      })();
   };
   return (
     <>
@@ -65,10 +85,6 @@ export function ReservationForm({ walks_services, t }: { walks_services: string[
               <option value="2">{t && t("reservation", "menu2")}</option>
               <option value="3">{t && t("reservation", "menu3")}</option>
             </select>
-          </label>
-          <label>
-            <input type="checkbox" name="paniza" id="paniza_form" />
-            {t && t("reservation", "paniza")}
           </label>
           {error && <p className="text-red-700">Error: {error}</p>}
           <input type="submit" name="submit_form" id="submit_form" value="Continue" />

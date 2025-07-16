@@ -22,6 +22,10 @@
 }
 
 .walks__item h2 {
+  background-color: #fff5;
+  padding: 8px;
+  border: 1px solid #0005;
+  border-radius: 8px;
   text-transform: capitalize;
 }
 

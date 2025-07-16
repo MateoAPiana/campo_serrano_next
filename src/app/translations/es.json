@@ -50,5 +50,6 @@
     "email": "Su email:",
     "emailPlaceholder": "Ingrese su email",
     "submit": "Enviar"
-  }
+  },
+  "confirmationMessage": "Estimado/a [Nombre del cliente]:\n¡Gracias por elegir Punto Serrano\nConfirmamos su reserva con los siguientes detalles:\n🗓 Fecha: [Fecha de la reserva]\n🕒 Hora: [Hora de la reserva]\n👥 Número de personas: \n[Cantidad de personas]\n📍 Dirección: [Dirección del local]\nLe recomendamos llegar con al menos 10 minutos de antelación.\nSi necesita modificar o cancelar su reserva, no dude en contactarnos."
 }

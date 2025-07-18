@@ -41,7 +41,14 @@
     "menu3": "Empanada",
     "paniza": "Are you stay in Paniza?",
     "chooseWalks": "Select the walks to do:",
-    "errorDate": "Please select a date."
+    "errorDate": "Please select a date.",
+    "menu1Description": "Roasted lamb with seasonal vegetable garnish.",
+    "menu2Description": [
+      "Roasted rabbit",
+      "Confit rabbit.",
+      "Rabbit pizza"
+    ],
+    "menu3Description": "Homemade pie filled with meat, chicken, or vegetables."
   },
   "productsReservation": {
     "title": "Consult price to our products",
@@ -50,6 +57,5 @@
     "email": "Your email:",
     "emailPlaceholder": "Enter your email",
     "submit": "Send"
-  },
-  "confirmationMessage": "Dear [Customer's Name],\n\nThank you for choosing Punto Serrano!\nWe’re pleased to confirm your reservation with the following details:\n\n🗓 Date: [Reservation Date]\n\n🕒 Time: [Reservation Time]\n\n👥 Number of guests: [Guest Count]\n\n📍 Location: [Venue Address]\n\nWe kindly recommend arriving at least 10 minutes early.\nIf you need to modify or cancel your reservation, feel free to contact us."
+  }
 }

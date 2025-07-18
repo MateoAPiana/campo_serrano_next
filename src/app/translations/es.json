@@ -41,7 +41,14 @@
     "menu3": "Empanada",
     "paniza": "Se está hospedando en Paniza?",
     "chooseWalks": "Seleccione los paseos que desea realizar:",
-    "errorDate": "Por favor, seleccione una fecha."
+    "errorDate": "Por favor, seleccione una fecha.",
+    "menu1Description": "Cordero asado con guarnición de verduras de temporada.",
+    "menu2Description": [
+      "Conejo asado",
+      "Confit de conejo",
+      "Conejo a la pizza"
+    ],
+    "menu3Description": "Empanada casera rellena de carne, pollo o verduras."
   },
   "productsReservation": {
     "title": "Consultar el precio de nuestros productos",
@@ -50,6 +57,5 @@
     "email": "Su email:",
     "emailPlaceholder": "Ingrese su email",
     "submit": "Enviar"
-  },
-  "confirmationMessage": "Estimado/a [Nombre del cliente]:\n¡Gracias por elegir Punto Serrano\nConfirmamos su reserva con los siguientes detalles:\n🗓 Fecha: [Fecha de la reserva]\n🕒 Hora: [Hora de la reserva]\n👥 Número de personas: \n[Cantidad de personas]\n📍 Dirección: [Dirección del local]\nLe recomendamos llegar con al menos 10 minutos de antelación.\nSi necesita modificar o cancelar su reserva, no dude en contactarnos."
+  }
 }

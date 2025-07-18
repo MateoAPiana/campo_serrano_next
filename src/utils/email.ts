@@ -1,8 +1,11 @@
+import { typeMenuItem } from "../../types";
+
 interface EmailData {
   reservationDate: string;
   guestCount: number;
   menu: string;
   walksSelected?: string[];
+  typesMenu?: typeMenuItem[];
 }
 
 export function sendEmail(email: string, data: EmailData) {
@@ -106,7 +109,8 @@ export function sendEmail(email: string, data: EmailData) {
   Número de personas: ${data.guestCount}.<br>
   Email del cliente: ${email}.<br>
   Menú seleccionado: ${data.menu}.<br>
-  Caminatas seleccionadas: ${data.walksSelected ? data.walksSelected.join(", ") : "Ninguna"}.
+  Caminatas seleccionadas: ${data.walksSelected ? data.walksSelected.join(", ") : "Ninguna"}.<br>
+  Tipo de menú seleccionado: ${data.typesMenu ? data?.typesMenu.map(item => `${item.typeMenu}: ${item.quantity}`).join(", ") : ""}.<br>
   `
 
   fetch("/api", {

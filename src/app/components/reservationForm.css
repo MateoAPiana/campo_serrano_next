@@ -5,6 +5,39 @@
   gap: 5%;
 }
 
+.reservation_form1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main_content {
+  display: flex;
+  gap: 20px;
+}
+
+.description_menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.type_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.type_menu input {
+  width: 10%;
+  background-color: var(--light);
+  padding: 4px;
+  font-family: inherit;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
 .calendar__wrapper {
   width: 80%;
   height: 100%;

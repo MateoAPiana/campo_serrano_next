@@ -18,7 +18,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "resend": "^4.4.1",
-    "vanilla-calendar-pro": "^3.0.4",
+    "vanilla-calendar-pro": "^3.0.5",
     "whatsapp": "^0.0.5-Alpha",
     "zod": "^3.24.3"
   },

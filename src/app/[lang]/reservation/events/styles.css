@@ -1,0 +1,42 @@
+.reservation_events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70dvh;
+}
+
+.reservation_events form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.calendar_wrapper {
+  max-width: 30%;
+}
+
+.inputs_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  width: 30%;
+}
+
+.inputs_wrapper input,
+.inputs_wrapper textarea {
+  padding: 8px;
+  font-family: inherit;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: #fff;
+  resize: none;
+}
+
+.inputs_wrapper input[type="submit"] {
+  max-width: 60%;
+}

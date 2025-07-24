@@ -57,5 +57,11 @@
     "email": "Your email:",
     "emailPlaceholder": "Enter your email",
     "submit": "Send"
+  },
+  "reservation_events": {
+    "email": "Your email:",
+    "people": "Quantity of people:",
+    "details": "Details of event:",
+    "submit": "Submit"
   }
 }

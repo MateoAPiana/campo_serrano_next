@@ -9,6 +9,7 @@ import "vanilla-calendar-pro/styles/index.css";
 
 import type { typeMenuItem } from "../../../../../types";
 import { getTranslations } from "app/app/translations/translate";
+import { redirect } from "next/navigation";
 
 export default function ReservationFormGastronomy({
   params,
@@ -87,6 +88,7 @@ export default function ReservationFormGastronomy({
     })
       ; (async () => {
         if (!email) throw new Error("The email is required");
+        const { lang } = await params
         const res = await sendEmailGastronomy(email, {
           reservationDate: day[0],
           guestCount: parseInt(guestCount),
@@ -94,7 +96,9 @@ export default function ReservationFormGastronomy({
           walksSelected,
           typesMenu: typeMenu
         });
-        if (res.ok) { }
+        if (res.ok) {
+          redirect(`/${lang}`)
+        }
       })();
   };
 

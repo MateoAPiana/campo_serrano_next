@@ -8,6 +8,8 @@ import "vanilla-calendar-pro/styles/index.css";
 import { getTranslations } from "app/app/translations/translate";
 import { sendEmailEvents } from "app/utils/email";
 
+import { redirect } from "next/navigation";
+
 export default function ReservationFormEvents({
   params,
 }: {
@@ -46,6 +48,7 @@ export default function ReservationFormEvents({
 
     (async () => {
       if (!email) throw new Error("The email is required");
+      const { lang } = await params
       const res = await sendEmailEvents(email, {
         reservationDate: day[0],
         guestCount: parseInt(guestCount),
@@ -53,7 +56,9 @@ export default function ReservationFormEvents({
         since,
         until
       });
-      if (res.ok) { }
+      if (res.ok) {
+        redirect(`/${lang}`)
+      }
     })();
   }
 

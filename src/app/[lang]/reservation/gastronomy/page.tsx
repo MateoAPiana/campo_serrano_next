@@ -2,7 +2,7 @@
 
 import "./styles.css";
 
-import { sendEmail } from "app/utils/email";
+import { sendEmailGastronomy } from "app/utils/email";
 import { MouseEventHandler, useEffect, useState } from "react";
 import { Calendar, Options } from "vanilla-calendar-pro";
 import "vanilla-calendar-pro/styles/index.css";
@@ -87,7 +87,7 @@ export default function ReservationFormGastronomy({
     })
       ; (async () => {
         if (!email) throw new Error("The email is required");
-        const res = await sendEmail(email, {
+        const res = await sendEmailGastronomy(email, {
           reservationDate: day[0],
           guestCount: parseInt(guestCount),
           menu,

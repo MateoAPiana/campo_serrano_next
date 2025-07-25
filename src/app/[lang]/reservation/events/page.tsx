@@ -6,6 +6,7 @@ import "./styles.css"
 import { Calendar, Options } from "vanilla-calendar-pro";
 import "vanilla-calendar-pro/styles/index.css";
 import { getTranslations } from "app/app/translations/translate";
+import { sendEmailEvents } from "app/utils/email";
 
 export default function ReservationFormEvents({
   params,
@@ -40,6 +41,20 @@ export default function ReservationFormEvents({
     const email = formData.get("email") as string
     const guestCount = formData.get("guestCount") as string
     const details = formData.get("details") as string
+    const since = formData.get("since") as string
+    const until = formData.get("until") as string
+
+    (async () => {
+      if (!email) throw new Error("The email is required");
+      const res = await sendEmailEvents(email, {
+        reservationDate: day[0],
+        guestCount: parseInt(guestCount),
+        details,
+        since,
+        until
+      });
+      if (res.ok) { }
+    })();
   }
 
   return (
@@ -50,11 +65,11 @@ export default function ReservationFormEvents({
           <div className="time_selection">
             <label>
               {t && t?.("reservation_events", "since")}<br />
-              <input type="text" name="time" id="time_event_since" defaultValue={"12:30"} required />
+              <input type="text" name="since" id="time_event_since" defaultValue={"12:30"} required />
             </label>
             <label>
               {t && t?.("reservation_events", "until")}<br />
-              <input type="text" name="time" id="time_event_until" defaultValue={"16:30"} required />
+              <input type="text" name="until" id="time_event_until" defaultValue={"16:30"} required />
             </label>
           </div>
 

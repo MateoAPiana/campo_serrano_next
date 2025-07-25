@@ -62,6 +62,8 @@
     "email": "Your email:",
     "people": "Quantity of people:",
     "details": "Details of event:",
-    "submit": "Submit"
+    "submit": "Submit",
+    "since": "Since",
+    "until": "Until"
   }
 }

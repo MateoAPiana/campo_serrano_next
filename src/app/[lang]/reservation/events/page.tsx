@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { MouseEventHandler, useEffect, useState } from "react";
 import "./styles.css"
 
 import { Calendar, Options } from "vanilla-calendar-pro";
@@ -13,14 +13,13 @@ export default function ReservationFormEvents({
   params: Promise<{ lang: string }>
 }) {
   const [t, setT] = useState<(key: string, paramKey?: string | undefined) => string>()
-  const [_day, setDay] = useState("")
+  const [day, setDay] = useState("")
   const options: Options = {
     onClickDate(self) {
       setDay(self.context.selectedDates as unknown as string)
     },
     selectedTheme: "light",
     dateMin: "today",
-    selectionTimeMode: 12
   };
 
   useEffect(() => {
@@ -35,13 +34,32 @@ export default function ReservationFormEvents({
     calendar.init();
   }, [])
 
+  const handleSubmit: MouseEventHandler<HTMLFormElement> = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget)
+    const email = formData.get("email") as string
+    const guestCount = formData.get("guestCount") as string
+    const details = formData.get("details") as string
+  }
+
   return (
     <main className="reservation_events">
-      <form action="post">
-        <div className="calendar_wrapper">
+      <form action="post" onSubmit={handleSubmit}>
+        <section className="calendar_wrapper">
           <div className="calendar"></div>
-        </div>
-        <div className="inputs_wrapper">
+          <div className="time_selection">
+            <label>
+              {t && t?.("reservation_events", "since")}<br />
+              <input type="text" name="time" id="time_event_since" defaultValue={"12:30"} required />
+            </label>
+            <label>
+              {t && t?.("reservation_events", "until")}<br />
+              <input type="text" name="time" id="time_event_until" defaultValue={"16:30"} required />
+            </label>
+          </div>
+
+        </section>
+        <section className="inputs_wrapper">
           <label>
             {t && t?.("reservation_events", "email")}<br />
             <input type="email" name="email" id="email_event" autoComplete="email" />
@@ -54,8 +72,13 @@ export default function ReservationFormEvents({
             {t && t?.("reservation_events", "details")}<br />
             <textarea name="details" id="details_event" rows={4} placeholder={t && t?.("reservation_events", "detailsPlaceholder")}></textarea>
           </label>
-          <input type="submit" name="events_submit" id="events_submit" value={t?.("reservation_events", "submit")} />
-        </div>
+          <input
+            type="submit"
+            name="events_submit"
+            id="events_submit"
+            value={t?.("reservation_events", "submit") || "Submit"}
+          />
+        </section>
       </form>
     </main>
   )

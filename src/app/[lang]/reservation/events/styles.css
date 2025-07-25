@@ -16,7 +16,12 @@
 }
 
 .calendar_wrapper {
-  max-width: 30%;
+  height: 100%;
+  max-width: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .inputs_wrapper {
@@ -25,6 +30,7 @@
   gap: 10px;
   height: 100%;
   width: 30%;
+  max-width: fit-content;
 }
 
 .inputs_wrapper input,
@@ -37,6 +43,27 @@
   resize: none;
 }
 
+.time_selection label {
+  width: 40%;
+}
+
+.time_selection input {
+  width: 100%;
+  padding: 8px;
+  font-family: inherit;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.time_selection {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
 .inputs_wrapper input[type="submit"] {
-  max-width: 60%;
+  width: 100%;
+  cursor: pointer;
 }

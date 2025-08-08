@@ -33,6 +33,7 @@
     "text": "We offer a unique experience that combines the beauty of nature with the richness of local gastronomy. Whether you're looking for a relaxing walk or an adventurous hike, we have the perfect option for you. Join us and discover the magic of our region!"
   },
   "reservation": {
+    "title": "Reservation of gastronomy and walks",
     "email": "Your email:",
     "people": "Quantity of people:",
     "menu": "Your menu:",
@@ -59,6 +60,7 @@
     "submit": "Send"
   },
   "reservation_events": {
+    "title": "Reservation of events",
     "email": "Your email:",
     "people": "Quantity of people:",
     "details": "Details of event:",

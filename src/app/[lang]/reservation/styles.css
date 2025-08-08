@@ -9,6 +9,36 @@
   margin: 5% 0;
 }
 
+.reservation_page__title {
+  font-size: 1.5rem;
+}
+
 .page:has(.reservation_page) {
   display: inline;
+}
+
+.reservation__container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-wrap: balance;
+}
+
+.links_wrapper {
+  min-width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.reservation__item {
+  padding: 16px;
+  width: fit-content;
+  background-color: var(--second-color);
+  border-radius: 12px;
 }

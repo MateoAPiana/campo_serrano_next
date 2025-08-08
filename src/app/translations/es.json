@@ -33,6 +33,7 @@
     "text": "Le ofrecemos una experiencia única que combina la belleza de la naturaleza con la riqueza de la gastronomía local. Tanto si busca un paseo relajante como una excursión de aventura, tenemos la opción perfecta para usted. ¡Únase a nosotros y descubra la magia de nuestra región!"
   },
   "reservation": {
+    "title": "Reserva de gastronomía y paseos",
     "email": "Su email:",
     "people": "Cantidad de personas:",
     "menu": "Su menú:",
@@ -59,6 +60,7 @@
     "submit": "Enviar"
   },
   "reservation_events": {
+    "title": "Reserva de eventos",
     "email": "Su email:",
     "people": "Cantidad de personas:",
     "details": "Detalles del evento:",

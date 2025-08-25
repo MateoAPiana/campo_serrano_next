@@ -40,7 +40,7 @@ export default async function Home({
           </p>
         </div>
       </section>
-      <section className="products">
+      <section className="products__wrapper">
         <div className="box__product product_gastronomic">
           <a href="/products/services">{t("services", "0")}</a>
         </div>
@@ -49,6 +49,9 @@ export default async function Home({
         </div>
         <div className="box__product product_others">
           <a href="/products/others">{t("services", "2")}</a>
+        </div>
+        <div className="box__product product_cabin">
+          <a href="/products/cabins">{t("services", "3")}</a>
         </div>
       </section>
     </main>

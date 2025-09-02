@@ -68,5 +68,11 @@
     "submit": "Enviar",
     "since": "Desde",
     "until": "Hasta"
+  },
+  "reservation_cabin": {
+    "title": "Reserva de cabañas",
+    "email": "Su email:",
+    "people": "Cantidad de personas:",
+    "submit": "Enviar"
   }
 }

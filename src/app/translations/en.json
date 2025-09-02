@@ -68,5 +68,11 @@
     "submit": "Submit",
     "since": "Since",
     "until": "Until"
+  },
+  "reservation_cabin": {
+    "title": "Reservation of cabins",
+    "email": "Your email:",
+    "people": "Quantity of people:",
+    "submit": "Submit"
   }
 }

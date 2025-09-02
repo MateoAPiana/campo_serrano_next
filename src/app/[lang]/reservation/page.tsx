@@ -21,6 +21,7 @@ export default async function Reservation({
       </div>
       <div className="links_wrapper">
         <Link href={`/${lang}/reservation/gastronomy`} className="reservation__item reservation__gastronomy">{t && t?.("reservation", "title")}</Link>
+        <Link href={`/${lang}/reservation/cabin`} className="reservation__item reservation__cabin">{t && t?.("services", "3")}</Link>
         <Link href={`/${lang}/reservation/events`} className="reservation__item reservation__events">{t && t?.("reservation_events", "title")}</Link>
       </div>
     </main>
